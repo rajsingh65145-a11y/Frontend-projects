@@ -1,0 +1,72 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px;
+  background:black;
+  color:red;
+}
+
+.navbar nav a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  height:80vh;
+  background:url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  padding:50px;
+  color:white;
+}
+
+.hero-content h2{
+  font-size:40px;
+}
+
+.hero-content button{
+  margin-top:20px;
+  padding:10px 20px;
+  border:none;
+  background:red;
+  color:white;
+  cursor:pointer;
+}
+
+/* MOVIES */
+.movies{
+  background:#111;
+  color:white;
+  padding:20px;
+}
+
+.movie-row{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  padding:10px;
+}
+
+.movie-card{
+  min-width:150px;
+  height:220px;
+  background:gray;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.movie-card:hover{
+  transform:scale(1.1);
+}
