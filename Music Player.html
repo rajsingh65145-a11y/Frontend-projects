@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Music Player.css">
+</head>
+<body>
+<div class="music-player">
+    <h1>Music player</h1>
+    <!-- SONG LIST-->
+
+    <img src="https://picsum.photos/300" class="song-image" alt="song image">
+
+    <!--SONG TITLE-->
+    <h2 id="song-title">
+        Sample Song
+    </h2>
+
+<!--AUDIO-->
+<audio id="audio">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+
+</audio>
+<!--PROGRESS BAR-->
+<input type="range"
+id="progress"
+value="0"
+ >
+ <!-- CONTROLS-->
+  <div class="controls">
+<button id="prev-btn">
+      ⏮
+    </button>
+
+    <button id="play-btn">
+      ▶
+    </button>
+
+    <button id="next-btn">
+      ⏭
+    </button>
+
+  </div>
+</div>
+</body>
+<script src="Music Player.js"></script>
+</html>
