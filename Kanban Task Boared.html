@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="Kanban Task Boared.css">
+</head>
+<body>
+
+  <h1>Kanban Task Board</h1>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <div class="board">
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>To Do</h2>
+      <div id="todo" class="list"></div>
+    </div>
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Doing</h2>
+      <div id="doing" class="list"></div>
+    </div>
+
+    <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <h2>Done</h2>
+      <div id="done" class="list"></div>
+    </div>
+
+  </div>
+
+  <script src="Kanban Task Boared.js"></script>
+</body>
+</html>
